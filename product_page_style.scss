@@ -73,14 +73,17 @@ summary::-webkit-details-marker {
     &__information {
         padding-bottom: 64px;
         border-bottom: 1px solid #EAEAEA;
+        
     }
-    // &__image {
-    //     position: relative;
-    // }
+    &__image {
+        position: relative;
+    }
     &__info {
-        //position: absolute;
+        position: relative;
+        top: -65px;
+        background-color: white;
         width: 1141px;
-        height: 601px;
+        height: 536px;
 
         border: 1px solid #EAEAEA;
         padding-top: 64px;
@@ -88,7 +91,7 @@ summary::-webkit-details-marker {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 128px;
+        margin-bottom: 63px;
         margin-left: 230px;
 
         &__subtitle {
