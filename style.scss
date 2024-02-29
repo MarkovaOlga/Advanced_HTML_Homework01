@@ -1,0 +1,218 @@
+@import 'var';
+@import 'footer';
+@import 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.header {
+    @import url(_header.scss);
+}
+
+.top {
+    &__content {
+        background: #F1E4E6;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    &__image {
+        padding-right: 64px
+    }
+    &__title {
+        display: flex;
+        width: 377px;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 289px;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+    }
+    
+    &__subtitle__big {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: $colorText;
+    }
+    
+    &__subtitle__small {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: $colorText;
+    }   
+}
+
+.links {
+    display: grid;
+    justify-content: center;
+    justify-items: start;
+    align-content: center;
+    align-items: start;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    padding-top: 65px;
+    padding-bottom: 96px;
+
+    &__item {
+        position: relative;
+    }
+
+    &__item__big {
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #F16D7F;
+    }
+}
+
+.products {
+    &__all__item {
+        grid-template-columns: repeat(3, 360px);
+        display: grid;
+        gap: 30px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 46px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: $colorText;
+    }
+
+    &__top_text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #9F9F9F;
+    }
+    &__item {
+       background: #F8F8F8
+    }
+    &__item__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &__item__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    }
+
+    &__content {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-top: 23px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+    }
+
+    &__item__price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
+
+    &__button {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        background-color: white;
+        border: 2px solid #F26376;
+        margin: 0 auto;
+        display: block;
+        margin-top: 48px;
+        margin-bottom: 60px;
+        width: 212px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transition: all 0.3s;
+        animation: heartbeat 1.5s ease-in-out 3s both;
+    }
+
+    &__button:hover {
+        background-color: purple;
+        color: white;
+    }
+}
+.footer {
+    @import url(_footer.scss);
+}
+
+

@@ -1,0 +1,185 @@
+@import 'var';
+.footer {
+    &__info {
+        background: #222224;
+        height: 341px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 235px;
+        padding-right: 230px;
+    }
+    
+    &__info__heading {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: $colorFooterText1;
+    }
+    
+    &__info__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: $colorFooterText1;
+    }
+    
+    &__info__info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    &__footer__item {
+        height: 448px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    &__background__item {
+        height: 448px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__passage {
+        position: absolute;
+        top: 3000px;
+        display: grid;
+        margin-left: 230px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        gap: 30px;
+    }
+    
+    &__passage__image {
+        border-radius: 50px;
+    }
+    
+    &__passage__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: $colorText;
+    }
+    
+    &__subscribe {
+        position: absolute;
+        top: 3050px;
+        display: grid;
+        align-items: center;
+        margin-right: 230px;
+        margin-left: 831px;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        width: 553px;
+    }
+    
+    &__subscribe__heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    &__subscribe__title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    &__subscribe__button {
+        height: 49px;
+        width: 356px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 32px;
+    }
+    
+    &__field {
+        width: 256px;
+        background: #E1E1E1;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        opacity: 0.67;
+        color: #222224;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        border-radius: 50px 0 0 50px;
+    }
+    
+    &__button__submite {
+        width: 100px;
+        background: #F16D7F;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 0 50px 50px 0;
+        display: block;
+        padding-top: 15px;
+        transition: all 0.3s;
+        animation: heartbeat 1.5s ease-in-out 3s both;
+    }
+    
+    &__button__submite:hover {
+        background-color: purple;
+        color: white;
+    }
+    
+    &__copyrights {
+        background: $colorText;
+        height: 79px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    &__copyright {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: $colorFooterText1;
+        margin-left: 235px;
+    }
+    
+    &__social__icons {
+        display: flex;
+        gap: 7px;
+        margin-right: 230px;
+    }
+    
+    &__social__icon {
+        transition: all 0.3s;
+    }
+    
+    &__social__icon:hover {
+        transform: translateY(-5px) scale(1.3);
+    }
+}
