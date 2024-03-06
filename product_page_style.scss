@@ -100,8 +100,16 @@ summary::-webkit-details-marker {
             line-height: 17px;
             text-align: center;
             color: #F16D7F;
-            border-bottom: 1px solid #F16D7F;
-            padding-bottom: 12px
+            //border-bottom: 1px solid #F16D7F;
+            //padding-bottom: 12px
+        }
+        &__subtitle:after {
+            content: "";
+            display: block;
+            margin: 0 auto; 
+            width: 63px;
+            padding-top: 12px;
+            border-bottom: 3px solid #F16D7F;
         }
 
         &__title {
