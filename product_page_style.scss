@@ -6,7 +6,13 @@
 * {
     margin: 0;
     padding: 0;
+
+    ul {
+        list-style-type: none;
+        text-decoration: none;
+    }
 }
+
 
 a {
     text-decoration: none;
@@ -53,6 +59,17 @@ summary::-webkit-details-marker {
 
     &__breadcrumbs {
         margin-right: 230px;
+        display: flex;
+    }
+
+    // добавить content для всех элементов кроме последнего
+    &__breadcrumbs__link:not(:last-child)::after {
+        content: '/';
+        padding: 0 8px;
+    }
+    // сделать последнего жирным
+    &__breadcrumbs__link:last-child {
+        font-weight: bolder;
     }
 
     &__breadcrumbs__link {
@@ -73,11 +90,13 @@ summary::-webkit-details-marker {
     &__information {
         padding-bottom: 64px;
         border-bottom: 1px solid #EAEAEA;
-        
+
     }
+
     &__image {
         position: relative;
     }
+
     &__info {
         position: relative;
         top: -65px;
@@ -103,10 +122,11 @@ summary::-webkit-details-marker {
             //border-bottom: 1px solid #F16D7F;
             //padding-bottom: 12px
         }
+
         &__subtitle:after {
             content: "";
             display: block;
-            margin: 0 auto; 
+            margin: 0 auto;
             width: 63px;
             padding-top: 12px;
             border-bottom: 3px solid #F16D7F;
@@ -133,6 +153,7 @@ summary::-webkit-details-marker {
             width: 555px;
             padding-bottom: 32px;
         }
+
         &__price {
             font-family: Lato;
             font-size: 24px;
@@ -142,7 +163,7 @@ summary::-webkit-details-marker {
             text-align: center;
             color: #EF5B70;
         }
-    
+
     }
 }
 
@@ -217,6 +238,7 @@ summary::-webkit-details-marker {
         color: #6f6e6e;
     }
 }
+
 .product-info__button {
     font-style: normal;
     font-weight: 400;
