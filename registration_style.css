@@ -255,6 +255,11 @@ summary::-webkit-details-marker {
   height: 149px;
   margin-top: 64px;
 }
+.registration__name2 {
+  width: 360px;
+  height: 381px;
+  margin-top: 64px;
+}
 .registration__title {
   font-family: var(--font-family);
   font-weight: 400;
