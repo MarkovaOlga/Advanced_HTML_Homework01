@@ -209,7 +209,11 @@ summary::-webkit-details-marker {
         color: #f16d7f;
     }
 }
-
+.cross_on_product {
+    position: relative;
+    left: 355px;
+    top: -120px;
+}
 .basket__adress__form_button:hover {
     background-color: #F16D7F;
     color: white;
@@ -406,5 +410,9 @@ summary::-webkit-details-marker {
         &__social__icons {
             margin-right: 32px;
         }
+    }
+    .cross_on_product {
+        left: 434px;
+        top: -120px
     }
 }
