@@ -265,12 +265,25 @@ summary::-webkit-details-marker {
   color: #f16d7f;
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__arrow__left {
+  position: relative;
+  z-index: 2;
+  left: 47px;
+}
+.slider__arrow__right {
+  position: relative;
+  z-index: 2;
+  left: -47px;
+}
+
 .product-main__information {
   padding-bottom: 64px;
   border-bottom: 1px solid #EAEAEA;
-}
-.product-main__image {
-  position: relative;
 }
 .product-main__info {
   position: relative;
@@ -415,4 +428,100 @@ summary::-webkit-details-marker {
 
 .footer {
   @import url(_footer.scss);
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .header {
+    gap: 424px;
+  }
+  .header__buttons__left {
+    margin-left: 32px;
+  }
+  .header__buttons__right {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-right: 32px;
+    width: 169px;
+  }
+  .top-head {
+    width: 768px;
+  }
+  .top-head__heading {
+    margin-left: 16px;
+  }
+  .top-head__breadcrumbs {
+    margin-right: 16px;
+  }
+  .product__hidden {
+    visibility: hidden;
+    display: none;
+  }
+  .product-box {
+    margin-left: 19px;
+    margin-top: 128px;
+    flex-wrap: nowrap;
+  }
+  .product-main {
+    display: contents;
+  }
+  .product-main__info {
+    top: 0;
+    width: 768px;
+    margin: auto;
+  }
+  .product-main__image {
+    height: 624px;
+    width: 768px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .footer__info {
+    height: 610px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .footer__item {
+    height: 584px;
+    width: 736px;
+  }
+  .footer__background__item {
+    height: 614px;
+    width: 736px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .footer__item_info {
+    width: 360px;
+  }
+  .footer__passage {
+    top: 2374px;
+    margin-left: 204px;
+  }
+  .footer__subscribe {
+    top: 2631px;
+    margin-left: 105px;
+    justify-content: center;
+  }
+  .footer__copyrights {
+    position: relative;
+  }
+  .footer__copyright {
+    margin-left: 32px;
+  }
+  .footer__social__icons {
+    margin-right: 32px;
+  }
 }/*# sourceMappingURL=product_page_style.css.map */
