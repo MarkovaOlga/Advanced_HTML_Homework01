@@ -4,3 +4,9 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@mixin fontForText() {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}

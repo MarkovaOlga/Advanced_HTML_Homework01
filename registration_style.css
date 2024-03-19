@@ -381,4 +381,107 @@ ul.registration__right__list li::before {
 
 .footer__subscribe {
   top: 1063px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .top-head {
+    width: 768px;
+  }
+  .top-head__heading {
+    margin-left: 16px;
+  }
+  .header {
+    gap: 424px;
+  }
+  .header__buttons__left {
+    margin-left: 32px;
+  }
+  .header__buttons__right {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-right: 32px;
+    width: 169px;
+  }
+  .registration {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 22px;
+  }
+  .registration__name {
+    margin-top: 40px;
+  }
+  .registration__name2 {
+    margin-top: 0;
+  }
+  .registration__text-bellow {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .registration__list-point {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+  }
+  .registration__right {
+    margin-top: 40px;
+  }
+  .registration__right__heading {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+  }
+  .registration__right__text {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+  }
+  .footer__info {
+    height: 610px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .footer__item {
+    height: 584px;
+    width: 736px;
+  }
+  .footer__background__item {
+    height: 614px;
+    width: 736px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .footer__item_info {
+    width: 360px;
+  }
+  .footer__passage {
+    top: 954px;
+    margin-left: 204px;
+  }
+  .footer__subscribe {
+    top: 1200px;
+    margin-left: 105px;
+    justify-content: center;
+  }
+  .footer__copyrights {
+    position: relative;
+  }
+  .footer__copyright {
+    margin-left: 32px;
+  }
+  .footer__social__icons {
+    margin-right: 32px;
+  }
 }/*# sourceMappingURL=registration_style.css.map */

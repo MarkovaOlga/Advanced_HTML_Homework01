@@ -70,6 +70,7 @@ summary::-webkit-details-marker {
         height: 149px;
         margin-top: 64px;
     }
+
     &__name2 {
         width: 360px;
         height: 381px;
@@ -213,4 +214,119 @@ ul.registration__right__list li::before {
 
 .footer__subscribe {
     top: 1063px;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .top-head {
+        width: 768px;
+
+        &__heading {
+            margin-left: 16px;
+        }
+    }
+
+    .header {
+        gap: 424px;
+
+        &__buttons__left {
+            margin-left: 32px;
+        }
+
+        &__buttons__right {
+            padding-bottom: 18px;
+            padding-top: 18px;
+            margin-right: 32px;
+            width: 169px;
+        }
+    }
+
+    .registration {
+        margin-left: 0;
+        margin-right: 0;
+        gap: 22px;
+
+        &__name {
+            margin-top: 40px;
+        }
+        &__name2 {
+            margin-top: 0;
+        }
+        &__text-bellow {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        &__list-point {
+            @include fontForText;
+        }
+
+        &__right {
+            margin-top: 40px;
+
+            &__heading {
+                @include fontForText;
+            }
+
+            &__text {
+                @include fontForText;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            height: 610px;
+            gap: 48px;
+            flex-direction: column;
+        }
+
+        &__item {
+            height: 584px;
+            width: 736px;
+        }
+
+        &__background__item {
+            height: 614px;
+            width: 736px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        &__item_info {
+            width: 360px;
+        }
+
+        &__passage {
+            top: 954px;
+            margin-left: 204px;
+        }
+  
+        &__subscribe {
+            top: 1200px;
+            margin-left: 105px;
+            justify-content: center;
+        }
+        &__copyrights {
+            position: relative;
+        }
+        &__copyright {
+            margin-left: 32px;
+        }
+
+        &__social__icons {
+            margin-right: 32px;
+        }
+    }
 }
