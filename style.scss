@@ -215,4 +215,126 @@ body {
     @import url(_footer.scss);
 }
 
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
 
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .header {
+        gap: 424px;
+
+        &__buttons__left {
+        margin-left: 32px;
+        }
+
+        &__buttons__right {
+        padding-bottom: 18px;
+        padding-top: 18px;
+        margin-right: 32px;
+        width: 169px;
+        }
+    }
+    .top {
+        &__image {
+        width: 386px;
+        padding-right: 39px;
+        }
+
+        &__title {
+        width: 311px;
+        margin-top: 138px;
+        }
+
+        &__subtitles {
+        height: 92px;
+        }
+
+        &__subtitle__big {
+        font-size: 44px;
+        line-height: 53px;
+        text-align: left;
+        }
+
+        &__subtitle__small {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+        }
+    }
+    
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 232px);
+        gap: 18px;
+        padding-bottom: 109px;
+
+        &__image {
+        width: 232px;
+        }
+
+        &__image__big {
+        width: 734px;
+        }
+    }
+
+    .products {
+        &__heading {
+        gap: 3px;
+        margin-bottom: 72px;
+        }
+        &__item {
+        grid-template-columns: repeat(2, 360px);
+        display: grid;
+        gap: 16px;
+        }
+        &__button {
+        margin-top: 32px;
+        margin-bottom: 70px;
+    }
+    }
+
+    .footer {
+        &__info {
+            height: 610px;
+            gap: 48px;
+            flex-direction: column;
+        }
+        &__item {
+        height: 584px;
+        width: 736px;
+        }
+        &__background__item {
+        height: 614px;
+        width: 736px;
+        object-fit: cover;
+        object-position: 0 0;
+        }
+        &__item_info {
+        width: 360px;
+        }
+        &__passage {
+        top: 3644px;
+        margin-left: 204px;
+        }
+        &__subscribe {
+            top: 3917px;
+            margin-left: 105px;
+            justify-content: center;
+        }
+        &__copyright {
+        margin-left: 32px;
+        }
+        &__social__icons {
+        margin-right: 32px;
+        }
+    }
+}

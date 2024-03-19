@@ -384,4 +384,111 @@ body {
 
 .footer {
   @import url(_footer.scss);
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .header {
+    gap: 424px;
+  }
+  .header__buttons__left {
+    margin-left: 32px;
+  }
+  .header__buttons__right {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-right: 32px;
+    width: 169px;
+  }
+  .top__image {
+    width: 386px;
+    padding-right: 39px;
+  }
+  .top__title {
+    width: 311px;
+    margin-top: 138px;
+  }
+  .top__subtitles {
+    height: 92px;
+  }
+  .top__subtitle__big {
+    font-size: 44px;
+    line-height: 53px;
+    text-align: left;
+  }
+  .top__subtitle__small {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 232px);
+    gap: 18px;
+    padding-bottom: 109px;
+  }
+  .links__image {
+    width: 232px;
+  }
+  .links__image__big {
+    width: 734px;
+  }
+  .products__heading {
+    gap: 3px;
+    margin-bottom: 72px;
+  }
+  .products__item {
+    grid-template-columns: repeat(2, 360px);
+    display: grid;
+    gap: 16px;
+  }
+  .products__button {
+    margin-top: 32px;
+    margin-bottom: 70px;
+  }
+  .footer__info {
+    height: 610px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .footer__item {
+    height: 584px;
+    width: 736px;
+  }
+  .footer__background__item {
+    height: 614px;
+    width: 736px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .footer__item_info {
+    width: 360px;
+  }
+  .footer__passage {
+    top: 3644px;
+    margin-left: 204px;
+  }
+  .footer__subscribe {
+    top: 3917px;
+    margin-left: 105px;
+    justify-content: center;
+  }
+  .footer__copyright {
+    margin-left: 32px;
+  }
+  .footer__social__icons {
+    margin-right: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
