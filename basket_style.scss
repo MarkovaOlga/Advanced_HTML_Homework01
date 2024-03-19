@@ -209,6 +209,7 @@ summary::-webkit-details-marker {
         color: #f16d7f;
     }
 }
+
 .basket__adress__form_button:hover {
     background-color: #F16D7F;
     color: white;
@@ -251,13 +252,13 @@ summary::-webkit-details-marker {
 }
 
 .buttons-bellow {
-    margin-top: 72px;
+    margin-top: 32px;
     margin-bottom: 128px;
     display: flex;
     gap: 192px;
     width: 652px;
     justify-content: space-between;
-    margin-left: 230px;
+
 }
 
 .button-bellow {
@@ -292,4 +293,118 @@ summary::-webkit-details-marker {
 
 .footer__subscribe {
     top: 1376px;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .top-head {
+        width: 768px;
+
+        &__heading {
+            margin-left: 16px;
+        }
+    }
+
+    .header {
+        gap: 424px;
+
+        &__buttons__left {
+            margin-left: 32px;
+        }
+
+        &__buttons__right {
+            padding-bottom: 18px;
+            padding-top: 18px;
+            margin-right: 32px;
+            width: 169px;
+        }
+    }
+
+    .basket {
+        gap: 62px;
+        margin-left: 0;
+        margin-top: 59px;
+        flex-direction: column;
+        &__product_equel {
+            width: 734px;
+            height: 306px;
+        }
+        &__right-part {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-bottom: 128px
+        }
+        &__total-price {
+            margin-top: 37px;
+        }
+    }
+    .buttons-bellow {
+        gap: 48px;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+
+    .footer {
+        &__info {
+            height: 610px;
+            gap: 48px;
+            flex-direction: column;
+        }
+
+        &__item {
+            height: 584px;
+            width: 736px;
+        }
+
+        &__background__item {
+            height: 614px;
+            width: 736px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        &__item_info {
+            width: 360px;
+        }
+
+        &__passage {
+            top: 1554px;
+            margin-left: 204px;
+        }
+
+        &__subscribe {
+            top: 1810px;
+            margin-left: 105px;
+            justify-content: center;
+        }
+
+        &__copyrights {
+            position: relative;
+        }
+
+        &__copyright {
+            margin-left: 32px;
+        }
+
+        &__social__icons {
+            margin-right: 32px;
+        }
+    }
 }
