@@ -330,3 +330,144 @@ ul.registration__right__list li::before {
         }
     }
 }
+@media(max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hidemobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .top__image {
+        visibility: hidden;
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        gap: 200px;
+        width: 100vw;
+
+        &__buttons__right {
+            display: flex;
+            justify-content: flex-end;
+            width: 32px;
+            margin-right: 16px;
+        }
+
+        &__buttons__left {
+            margin-left: 16px;
+        }
+    }
+
+    .top-head {
+        flex-direction: column;
+        gap: 32px;
+        width: 100vw;
+
+        &__heading {
+            margin: auto;
+        }
+
+        &__breadcrumbs {
+            margin: auto;
+        }
+    }
+
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        &__button {
+            margin-bottom: 40px;
+        }
+        &__name2 {
+            height: 330px;
+        }
+        &__right {
+            margin-top: 0;
+            width: 360px;
+        }
+    }
+
+
+    .footer {
+        display: contents;
+
+        &__passage {
+            top: 1250px;
+        }
+
+        &__subscribe {
+            top: 1530px;
+        }
+
+        &__item {
+            height: 610px;
+            width: 100vw;
+        }
+
+        &__background__item {
+            width: 100vw;
+            height: 610px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        &__passage {
+            width: 100vw;
+            margin-left: 0px;
+        }
+
+        &__subscribe {
+            width: 100vw;
+            margin-left: 0px;
+            margin-right: 0px;
+            justify-items: center;
+        }
+
+        &__passage__text {
+            padding-top: 29px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        &__subscribe__button {
+            width: 311px;
+            margin-right: 0px;
+        }
+
+        &__subscribe__heading {
+            width: 271px;
+        }
+
+        &__subscribe__title {
+            width: 271px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &__copyrights {
+            width: 100vw;
+            height: 143px;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        &__social__icons {
+            margin: 43px 114px 40px 114px
+        }
+
+        &__copyright {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
