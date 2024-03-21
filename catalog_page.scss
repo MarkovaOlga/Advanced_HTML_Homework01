@@ -371,11 +371,14 @@ summary::-webkit-details-marker {
         justify-content: space-between;
         align-items: center;
     }
+
     .sort {
         padding-top: 0;
     }
+
     .filter {
         padding-top: 0;
+
         &__summary {
             padding-left: 0;
         }
@@ -387,13 +390,16 @@ summary::-webkit-details-marker {
         padding-top: 16px;
         padding-left: 16px;
     }
+
     .product-box {
         grid-template-columns: repeat(2, 360px);
     }
+
     .hidden_product {
         visibility: hidden;
         display: none;
     }
+
     .pagination {
         margin-bottom: 63px;
     }
@@ -425,21 +431,197 @@ summary::-webkit-details-marker {
             top: 3714px;
             margin-left: 204px;
         }
-  
+
         &__subscribe {
             top: 3990px;
             margin-left: 105px;
             justify-content: center;
         }
+
         &__copyrights {
             position: relative;
         }
+
         &__copyright {
             margin-left: 32px;
         }
 
         &__social__icons {
             margin-right: 32px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hidemobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .top__image {
+        visibility: hidden;
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        gap: 200px;
+        width: 100vw;
+
+        &__buttons__right {
+            display: flex;
+            justify-content: flex-end;
+            width: 32px;
+            margin-right: 16px;
+        }
+
+        &__buttons__left {
+            margin-left: 16px;
+        }
+    }
+
+    .top-head {
+        flex-direction: column;
+        gap: 32px;
+        width: 100vw;
+        &__heading {
+            margin: auto;
+        }
+
+        &__breadcrumbs {
+            margin: auto;
+        }
+    }
+
+    .hide_when_close {
+        display: none;
+    }
+
+    .filter {
+        width: 100vw;
+
+        &[open] .filter__heading {
+            display: block;
+        }
+
+        &__svg {
+            width: 37px;
+            height: 25px;
+        }
+    }
+
+    .sort {
+        position: absolute;
+        right: 10px;
+
+        &__heading {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            text-align: left;
+
+        }
+    }
+
+    .product-box {
+        grid-template-columns: repeat(1, 360px);
+    }
+
+    .footer {
+        display: contents;
+
+        &__passage {
+            top: 6360px;
+        }
+
+        &__subscribe {
+            top: 6638px;
+        }
+
+        &__info {
+            width: 100vw;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        &__info__info {
+            width: 348px;
+            padding-right: 15px;
+        }
+
+        &__info__text {
+            font-weight: 300;
+        }
+
+        &__item {
+            height: 610px;
+            width: 100vw;
+        }
+
+        &__background__item {
+            width: 100vw;
+            height: 610px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        &__passage {
+            width: 100vw;
+            margin-left: 0px;
+        }
+
+        &__subscribe {
+            width: 100vw;
+            margin-left: 0px;
+            margin-right: 0px;
+            justify-items: center;
+        }
+
+        &__passage__text {
+            padding-top: 29px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        &__subscribe__button {
+            width: 311px;
+            margin-right: 0px;
+        }
+
+        &__subscribe__heading {
+            width: 271px;
+        }
+
+        &__subscribe__title {
+            width: 271px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &__copyrights {
+            width: 100vw;
+            height: 143px;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        &__social__icons {
+            margin: 43px 114px 40px 114px
+        }
+
+        &__copyright {
+            margin-left: 50px;
+            margin-right: 50px;
         }
     }
 }
