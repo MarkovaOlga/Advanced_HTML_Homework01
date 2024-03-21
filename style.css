@@ -386,6 +386,13 @@ body {
   @import url(_footer.scss);
 }
 
+.footer__passage {
+  top: 3390px;
+}
+.footer__subscribe {
+  top: 3430px;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 368px);
@@ -490,5 +497,162 @@ body {
   }
   .footer__social__icons {
     margin-right: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+  .top__image {
+    visibility: hidden;
+    display: none;
+  }
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    gap: 200px;
+    width: 100vw;
+  }
+  .header__buttons__right {
+    display: flex;
+    justify-content: flex-end;
+    width: 32px;
+    margin-right: 16px;
+  }
+  .header__buttons__left {
+    margin-left: 16px;
+  }
+  .top__content {
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top__title {
+    width: 263px;
+    height: 66px;
+    margin-top: 148px;
+    margin-bottom: 149px;
+    align-items: flex-start;
+  }
+  .top__subtitle__big {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .top__subtitle__small {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(1, 343px);
+    gap: 32px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+  .links__image {
+    width: 343px;
+  }
+  .links__image__big {
+    width: 343px;
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .products__heading {
+    margin-bottom: 64px;
+  }
+  .products__button {
+    margin-top: 40px;
+    margin-bottom: 85px;
+  }
+  .products__item {
+    grid-template-columns: auto;
+  }
+  .products__all__item {
+    grid-template-columns: repeat(1, 360px);
+    gap: 15px;
+  }
+  .footer {
+    display: contents;
+  }
+  .footer__passage {
+    top: 6160px;
+  }
+  .footer__subscribe {
+    top: 6438px;
+  }
+  .footer__info {
+    width: 100vw;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .footer__info__info {
+    width: 348px;
+    padding-right: 15px;
+  }
+  .footer__info__text {
+    font-weight: 300;
+  }
+  .footer__item {
+    height: 610px;
+    width: 100vw;
+  }
+  .footer__background__item {
+    width: 100vw;
+    height: 610px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .footer__passage {
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .footer__subscribe {
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-items: center;
+  }
+  .footer__passage__text {
+    padding-top: 29px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .footer__subscribe__button {
+    width: 311px;
+    margin-right: 0px;
+  }
+  .footer__subscribe__heading {
+    width: 271px;
+  }
+  .footer__subscribe__title {
+    width: 271px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .footer__copyrights {
+    width: 100vw;
+    height: 143px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .footer__social__icons {
+    margin: 43px 114px 40px 114px;
+  }
+  .footer__copyright {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
